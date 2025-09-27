@@ -6,7 +6,7 @@ export default function Project({ title, description, longerDescription, childre
     }
 
     return (
-        <div className={`w-[367px] sm:w-[556px] p-5 bg-black/10 rounded-2xl outline outline-2 outline-offset-[-2px] outline-black/10 inline-flex justify-start items-start gap-5 hover:outline-black/20 hover:bg-black/20 transition-all duration-200 cursor-pointer shadow-sm hover:shadow-md hover:shadow-black/20 active:shadow-md active:bg-black/25 ${mobile ? "flex-col" : "hover:-translate-y-1 transform active:-translate-y-[0.2px]"}`} onClick={onClick}>
+        <div className={`w-[367px] sm:w-[556px] p-5 bg-black/10 rounded-2xl outline outline-2 outline-offset-[-2px] outline-black/10 inline-flex justify-start items-start gap-5 hover:outline-black/20 hover:bg-black/20 transition-all duration-200 cursor-pointer shadow-sm hover:shadow-md hover:shadow-black/20 active:shadow-md active:bg-black/25 ${mobile ? "flex-col" : ""}`} onClick={onClick}>
             <div className={`${mobile ? "w-[100%]" : "w-48"} h-36 flex justify-center ${mobile ? "items-center" : "items-start"} gap-2.5 overflow-hidden`}>
                 { !image &&
                 <div className="w-48 h-28 bg-zinc-300" />

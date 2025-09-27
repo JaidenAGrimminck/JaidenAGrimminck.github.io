@@ -4,7 +4,7 @@ import Job from "./Job";
 export default function Experience({ experience_ref }) {
     return (
         <div className="inline-flex flex-col justify-center sm:justify-start items-center sm:items-start mt-[20px] sm:mt-[0px] gap-10 " ref={experience_ref}>
-            <div className="justify-start text-white text-2xl ">Experience</div>
+            <div className="justify-start text-white text-2xl font-bold">Experience</div>
             <Job 
                 title={"Microsoft • Young Innovator"}
                 time={"Nov 2023"}

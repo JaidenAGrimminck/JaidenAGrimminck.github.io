@@ -5,7 +5,7 @@ export default function Projects({ project_ref, mobile=false }) {
     return (
         <div className="w-[90vw] sm:pl-[0px] sm:w-[100%] flex flex-row justify-center items-center gap-2.5" ref={project_ref}>
             <div className={`self-stretch pt-5 inline-flex ${mobile ? "flex-col justify-start items-start gap-7" : "flex-col flex-start gap-2.5"}`}>
-                <div className="justify-start text-white text-2xl  w-[100vw] text-center sm:w-auto sm:text-left">Projects</div>
+                <div className="justify-start text-white text-2xl  w-[100vw] text-center sm:w-auto sm:text-left font-bold">Projects</div>
 
                 <div className={`p-2.5 ${mobile ? "inline-flex flex-col justify-start items-start gap-2.5" : "inline-flex justify-center items-start gap-2.5"}`}>
                     <div className="inline-flex flex-col justify-start items-start gap-5 overflow-hidden pt-[20px]">
