@@ -18,7 +18,7 @@ export default function Project({ title, description, longerDescription, childre
             <div className="flex-1 inline-flex flex-col justify-start items-start gap-2.5">
                 <div className="inline-flex justify-center items-center gap-2.5 overflow-hidden">
                     <div className="justify-start text-white text-xl  font-bold leading-none">{title}</div>
-                    <div data-size="20" className="w-5 h-5 relative overflow-hidden">
+                    <div data-size="20" className="w-5 h-5 overflow-hidden" style={{ position: "inherit" }}>
                         <SquareArrowOutUpRight width={20} height={20} />
                     </div>
                 </div>
