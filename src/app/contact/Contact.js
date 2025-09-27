@@ -53,8 +53,8 @@ export default function Contact({ contact_ref }) {
         <>
         <div className="flex flex-row ml-[10%] mr-[10%] justify-center items-center mt-[200px] pb-[200px]" ref={contact_ref}>
             <div className="w-[100vw] text-center">
-                <h2 className="text-2xl">Contacts</h2>
-                <div className="flex flex-row justify-center items-center mt-[10px] gap-5 sm:gap-10">
+                <h2 className="text-2xl mb-[10px]" style={{ fontWeight: "250" }}>Contacts</h2>
+                <div className="flex flex-row justify-center items-center mt-[20px] gap-5 sm:gap-10">
                     <a href="mailto:jg2575@cornell.edu">
                     <Mail size={width <= 1370 ? 28 : 48} ref={mailRef} className="hover:text-blue-300 transition-colors duration-200 cursor-pointer" />
                     </a>
