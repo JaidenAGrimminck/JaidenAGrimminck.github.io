@@ -2,7 +2,7 @@
 
 import React from "react";
 import ProjectTag from "./ProjectTag";
-import { SquareArrowOutUpRight } from "lucide-react";
+import { SquareArrowOutUpRight, X } from "lucide-react";
 
 export default function ProjectOverlay() {
     const [title, setTitle] = React.useState("Project Name");
@@ -91,6 +91,10 @@ export default function ProjectOverlay() {
 
     return (
         <div className="fixed h-full w-full bg-black/50 backdrop-blur-sm flex justify-center items-center z-50 opacity-0 transition duration-300 user-select-none pointer-events-none" ref={overlayRef} onClick={onClick}>
+            <div className="absolute top-5 right-5 text-white-700 hover:text-white/70 pointer-events-none cursor-pointer">
+                <X />
+            </div>
+
             <div className="outline outline-2 outline-black/90 bg-black/60 p-5 rounded-lg shadow-lg cursor-alias" ref={projRef}>
                 <h2 className="text-xl font-bold mb-2 flex flex-row items-center gap-2">{title}
                     <SquareArrowOutUpRight width={20} height={20} />
