@@ -37,10 +37,13 @@ The library contains a custom topic-based protocol with reciprocal libraries in 
                         </Project>
                     </div>
                     <div className="inline-flex flex-col justify-start items-start gap-5 overflow-hidden pt-[20px]">
-                        <Project link={"https://github.com/hackclub/hackpad/pull/146"} image={"/hackpad.png"} title={"hackpad"} description={"Numpad with custom PCB and casing."} mobile={mobile}>
-                            <ProjectTag title={"C++"} type={"lang"}/>
+                        <Project link={"https://github.com/hackclub/hackpad/pull/146"} image={"/hackpad.png"} title={"hackpad"} description={"Numpad with custom PCB and casing."} mobile={mobile}
+                        longerDescription={`
+A custom numpad-like device I made with 9 keys, two displays, and three potentiometers. The code was written in C++ (Arduino) and the PCB was designed in KiCAD. The case was designed in Fusion 360 and 3D printed.
+`}>
                             <ProjectTag title={"CAD"} />
                             <ProjectTag title={"KiCAD"} />
+                            <ProjectTag title={"C++"} type={"lang"}/>
                         </Project>
                         <Project link={"https://github.com/ftc23014/team23014"} image={"/team23014.jpg"} title={"team23014"} description={"Website for FIRST Tech Challenge Team 23014."} mobile={mobile}>
                             <ProjectTag title={"React"} />

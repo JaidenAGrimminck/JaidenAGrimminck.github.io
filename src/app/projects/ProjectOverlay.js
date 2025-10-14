@@ -98,9 +98,10 @@ export default function ProjectOverlay() {
             <div className="outline outline-2 outline-black/90 bg-black/60 p-5 rounded-lg shadow-lg cursor-alias" ref={projRef}>
                 <h2 className="text-xl font-bold mb-2 flex flex-row items-center gap-2">{title}
                     <SquareArrowOutUpRight width={20} height={20} />
+                    <p className="font-light text-gray-400"><i>(Click to see project)</i></p>
                 </h2>
                 <div className="flex flex-row w-[100%] justify-center items-center">
-                <img src={image} alt="Project Screenshot" className="mb-4 rounded-lg w-[80vw] max-w-[600px] max-h-[70vh]" />
+                <img src={image} alt="Project Screenshot" className="mb-4 rounded-lg max-w-[600px] max-h-[60vh]" />
                 </div>
                 <div className="w-[80vw] max-w-[600px] flex flex-col justify-start items-start">
                     <p>Tags:</p>
